@@ -1,0 +1,10 @@
+import numpy as np
+
+a = np.array([120,85,150,200,175,90,110,160,210,180,95,130])
+
+total = a.sum()
+avg = a.mean()
+
+print("Total Rainfall:", total)
+print("Average Rainfall:", round(avg,2))
+print("Months:", np.where(a > avg)[0] + 1)
